@@ -1,1 +1,5 @@
 https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/install-kubeadm/#installing-kubeadm-kubelet-and-kubectl:~:text=a%20package%20manager-,Kubernetes%20package%20repositories,-These%20instructions%20are
+
+kubeadm join 192.168.130.17:6443 --token p4hr06.xw7zb37vxnrifoft \
+        --discovery-token-ca-cert-hash sha256:d484138b0b12f7ce7ce85f38b2a8c12242035e8a4bf55c567724aa0b6bfda10c
+
