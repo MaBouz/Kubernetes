@@ -8,4 +8,6 @@ kubeadm join 192.168.130.17:6443 --token p4hr06.xw7zb37vxnrifoft \
 kubeadm join 192.168.130.17:6443 --token 8y7hyw.hbuho8e7o9i54ezd \
 	--discovery-token-ca-cert-hash sha256:0a2ee00e0acd535248f11989d2debd601e9e72125964b90f0d5903252d04db74 
 
+?createDatabaseIfNotExist=true&useSSL=false&serverTimezone=UTC
+
 
