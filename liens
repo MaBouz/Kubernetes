@@ -3,10 +3,8 @@ https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/install-ku
 kubeadm join 192.168.130.17:6443 --token p4hr06.xw7zb37vxnrifoft \
         --discovery-token-ca-cert-hash sha256:d484138b0b12f7ce7ce85f38b2a8c12242035e8a4bf55c567724aa0b6bfda10c
 
+kubeadm join 192.168.130.17:6443 --token qxi3g0.ghmck63hxynv544m --discovery-token-ca-cert-hash sha256:0a2ee00e0acd535248f11989d2debd601e9e72125964b90f0d5903252d04db74 
 
-
-kubeadm join 192.168.130.17:6443 --token 8y7hyw.hbuho8e7o9i54ezd \
-	--discovery-token-ca-cert-hash sha256:0a2ee00e0acd535248f11989d2debd601e9e72125964b90f0d5903252d04db74 
 
 ?createDatabaseIfNotExist=true&useSSL=false&serverTimezone=UTC
 
