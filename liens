@@ -12,3 +12,25 @@ kubeadm join 192.168.1.20:6443 --token 0dcvmc.vfolzkjguo2axrt7 \
 ?createDatabaseIfNotExist=true&useSSL=false&serverTimezone=UTC
 
 
+- name: Create a VirtualBox VM
+  hosts: localhost
+  tasks:
+    - name: Create a VM
+      community.general.virtualbox_guest:
+        name: my_vm_name
+        ostype: Ubuntu_64
+        state: poweredon
+        auto_poweron: yes
+        ram: 1024
+        vram: 12
+        boot1: dvd
+        boot2: disk
+        boot3: none
+        boot4: none
+        bootdevice: dvd
+        ide_controller: SATA Controller
+        hdd: /path/to/your/vm_disk.vdi
+        dvd: /path/to/your/iso_image.iso
+
+
+
