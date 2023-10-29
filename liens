@@ -33,4 +33,7 @@ kubeadm join 192.168.1.20:6443 --token 0dcvmc.vfolzkjguo2axrt7 \
         dvd: /path/to/your/iso_image.iso
 
 
+https://docs.nginx.com/nginx-ingress-controller/installation/installation-with-manifests/
+
+
 
